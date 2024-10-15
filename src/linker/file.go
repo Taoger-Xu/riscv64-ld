@@ -7,8 +7,11 @@ import (
 	"github.com/Taoger-Xu/riscv64-ld/src/utils"
 )
 
+// 对磁盘文件的抽象，是interface
 type File struct {
-	Name    string
+	// 名称
+	Name string
+	// 字节流
 	Content []byte
 }
 
